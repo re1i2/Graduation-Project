@@ -33,31 +33,31 @@ The platform allows users to:
 - ## Project Screenshots
 
 ### 1. Homepage  
-![Homepage](https://github.com/re1i2/Graduation-Project/blob/main/photo_1.jpg)
+![Homepage](https://github.com/re1i2/Graduation-Project/blob/main/photo_7.jpg)
 
 ### 2. Sign In Page  
-![Sign In](https://github.com/re1i2/Graduation-Project/blob/main/photo_2.jpg)
+![Sign In](https://github.com/re1i2/Graduation-Project/blob/main/photo_1.jpg)
 
 ### 3. Sign Up Page  
-![Sign Up](https://github.com/re1i2/Graduation-Project/blob/main/photo_3.jpg)
+![Sign Up](https://github.com/re1i2/Graduation-Project/blob/main/photo_4.jpg)
 
 ### 4. Main Page  
-![Main Page](https://github.com/re1i2/Graduation-Project/blob/main/photo_4.jpg)
+![Main Page](https://github.com/re1i2/Graduation-Project/blob/main/photo_6.jpg)
 
 ### 5. Areas Overview  
 ![Areas Overview](https://github.com/re1i2/Graduation-Project/blob/main/photo_5.jpg)
 
 ### 6. Area 1 Example  
-![Area 1](https://github.com/re1i2/Graduation-Project/blob/main/photo_6.jpg)
+![Area 1](https://github.com/re1i2/Graduation-Project/blob/main/photo_2.jpg)
 
 ### 7. Area 2 Example  
-![Area 2](https://github.com/re1i2/Graduation-Project/blob/main/photo_7.jpg)
+![Area 2](https://github.com/re1i2/Graduation-Project/blob/main/photo_3.jpg)
 
 ### 8. Area 3 Example  
 ![Area 3](https://github.com/re1i2/Graduation-Project/blob/main/photo_8.jpg)
 
 ### 9. Chatbot with Database  
-![Chatbot](https://github.com/re1i2/Graduation-Project/blob/main/photo_9.jpg)
+![Chatbot](https://github.com/re1i2/Graduation-Project/blob/main/photo_10.jpg)
 
 ### 10. About Us Page  
-![About Us](https://github.com/re1i2/Graduation-Project/blob/main/photo_10.jpg)
+![About Us](https://github.com/re1i2/Graduation-Project/blob/main/photo_9.jpg)
