@@ -24,8 +24,8 @@ The platform allows users to:
 - Integrate modern technologies such as VR and Chatbots in the tourism sector
 
 ## Team Members:
-- Riham Mohammed  
-- Ghazwi Hamad  
+- Reham Mohammed  
+- Ghazwa Hamad  
 - Yasmeen Mohammed  
 - Asma Saeed  
 - Lina Ahmed
