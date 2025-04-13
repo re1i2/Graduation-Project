@@ -1,0 +1,101 @@
+/* تعيين الحواف والهوامش الأساسية لجميع العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url('../login.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* إعدادات الحاوية */
+.container2 {
+    text-align: left; /* محاذاة النص إلى اليسار */
+    max-width: 500px;
+    padding: 20px;
+    background-color: #bb78e4 !important; /* لون حاوية بنفسجي فاتح */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(224, 132, 218, 0.647);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center; /* توسيط الحاوية أفقيًا في الصفحة */
+}
+
+/* إعدادات قسم التقييم */
+.rating-container {
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    margin-bottom: 20px;
+}
+
+.rateyo {
+    margin-bottom: 5px; /* مسافة بين النجوم والعدد */
+    color: #eed85d !important; /* لون النجوم الأصفر الغامق */
+}
+
+.result {
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold; /* جعل الخط عريض */
+    font-family: 'Arial', sans-serif; /* تغيير نوع الخط */
+}
+
+/* إعدادات قسم التعليقات */
+.comment-container {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%; /* تأكيد أن الحاوية تملأ العرض */
+}
+
+.comment-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold; /* جعل الخط عريض */
+    font-family: 'Arial', sans-serif; /* تغيير نوع الخط */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 15px; /* حواف دائرية */
+    border: none;
+    resize: none;
+    font-size: 1em;
+    background-color: #444;
+    color: white;
+    font-family: 'Arial', sans-serif; /* تغيير نوع الخط */
+}
+
+/* إعدادات زر الإرسال */
+.submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #b57edc !important; /* اللون البنفسجي الفاتح */
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold; /* جعل الخط عريض */
+    font-family: 'Arial', sans-serif; /* تغيير نوع الخط */
+}
+
+.submit:hover {
+    background-color: #9e65d4 !important; /* اللون البنفسجي عند التمرير */
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>    
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;}
+    </style>
+</head>
+<body>
+    <div id="places" class="container-places">
+        <ul class="navbar">
+            <li ><a href="home.html">Home</a></li>
+            <li><a href="Places.html" aria-selected="true">Places</a></li>
+            <li><a href="php_project/index.html">FogChat</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="billdb/add_rate.php"><i class="fa-duotone fa-solid fa-ranking-star"></i></a>
+            <li><a href="Login.html" class="logout"><i class="fas fa-sign-out-alt logout-icon"></i> Log out</a></li>
+        </ul>
+        <div class="logo">
+            <img src="assest/logo.png" alt="Logo">
+        </div>
+        <div class="places-header">
+            <h1>PLACES</h1>
+        </div>
+    <section class="places-table section bg-light">
+        <div class="row" style="background-color:#927cd1; height: 435px;">
+            <div class="col-lg-10 m-auto">
+                <div class="places-table-img-slider" id="icon">
+                    <div class="swiper-wrapper">
+                        <div class="places-table-img back-img swiper-slide"
+                            style="background-image: url(assest/place1.jpeg)">
+                            <div class="description">
+                                <h3>Bakhroush Castle</h3>
+                                <p>Let's go to a magical world with its gates isolated from the outside world. A place that contains secrets dating back to ancient times, and whose walls live with ancient stories.</p>
+                                <a href="place6.html" class="btn">See more</a>
+                            </div>
+                        </div>
+                        <div class="places-table-img back-img swiper-slide"
+                            style="background-image: url(assest/place2.jpg)">
+                            <div class="description">
+                                <h3>Raghadan Forest</h3>
+                                <p>Raghadan Forest is a scenic area in Al-Baha, Saudi Arabia. Known for its lush greenery and tranquil environment, it offers visitors a peaceful retreat with walking paths and picnic spots, making it a popular destination for nature lovers.</p>
+                                <a href="place1.html" class="btn">See more</a>
+                            </div>
+                        </div>
+                        <div class="places-table-img back-img swiper-slide"
+                            style="background-image: url(assest/akhaween.jpg)">
+                            <div class="description">
+                                <h3>Al-akhaween mussem</h3>
+                                <p>Plan your visit to the Al-Akhaween Museum today and unlock the secrets of this enchanting region. Prepare to be awed, inspired, and forever transformed by the captivating treasures that await within.</p>
+                                <a href="place2.html" class="btn">See more</a>
+                            </div>
+                        </div>
+                        <div class="places-table-img back-img swiper-slide"
+                            style="background-image: url(assest/gnabeen_place.webp)">
+                            <div class="description">
+                                <h3>Al-Janabin Dam</h3>
+                                <p>Al-Janabin Dam in Al-Baha, Saudi Arabia, is a key water project designed to collect and store rainwater and runoff. It is known for its strategic location and scenic surroundings, making it a popular spot for visitors to enjoy natural views.</p>
+                                <a href="place5.html" class="btn">See more</a>
+                            </div>
+                        </div>
+                        <div class="places-table-img back-img swiper-slide"
+                            style="background-image: url(assest/place_husam.jpeg)">
+                            <div class="description">
+                                <h3>Prince Hussam Park</h3>
+                                <p>Prince Hussam Park in Al-Baha, Saudi Arabia, is a scenic spot with lush green mountains and forests. It features spacious areas for relaxation, family picnic spots, playgrounds, and walking trails, making it ideal for outdoor activities and relaxation.</p>
+                                <a href="place3.html" class="btn">See more</a>
+                            </div>
+                        </div>
+                        <div class="places-table-img back-img swiper-slide"
+                            style="background-image: url(assest/alaidplace.jpg)">
+                            <div class="description">
+                                <h3>Al-Ayed Museum</h3>
+                                <p>A heritage museum in Saudi Arabia that showcases a collection of artifacts and folk items representing the region's culture and heritage.</p>
+                                <a href="place4.html" class="btn">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-wp">
+                        <div class="swiper-button-prev swiper-button">
+                            <i class="uil uil-angle-left"></i>
+                        </div>
+                        <div class="swiper-button-next swiper-button">
+                            <i class="uil uil-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="assest/js/jquery-3.5.1.min.js"></script>
+    <script src="assest/js/swiper-bundle.min.js"></script>
+    <script>
+            const navbar = document.querySelector('.navbar');
+            const navLinks = document.querySelectorAll('.navbar a');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            navLinks.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+        $(document).ready(function ($) {
+            "use strict";
+            var places_table = new Swiper(".places-table-img-slider", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                speed: 2000,
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 3,
+                    stretch: 2,
+                    depth: 100,
+                    modifier: 5,
+                    slideShadows: false,
+                },
+                loopAdditionSlides: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="home" class="container-home">
+        <div class="image-section">
+            <img src="assest/home.png" alt="Al Baha City">
+            <div class="overlay-images">
+                <div class="overlay-image image1"></div>
+                <div class="overlay-image image2"></div>
+                <div class="overlay-image image3"></div>
+                <div class="overlay-image image4"></div>
+            </div>
+            <div class="welcome-text">WELCOME TO <br> <span style="font-size: 90%; margin-left: -90px; font-family: 'Dancing Script', cursive;">Al Baha City</span></div>
+            <div class="sub-text">
+                Embark on a virtual Journey 
+                <h4 style="margin: 0px; font-size: 1.5rem; margin-left: -220px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">through AL Baha</h4> 
+            </div>
+            <button onclick="window.location.href='places.html'" class="discover-btn">DISCOVER</button>
+        </div>
+        <ul class="navbar">
+            <li ><a href="home.html" aria-selected="true">Home</a></li>
+            <li><a href="Places.html">Places</a></li>
+            <li><a href="php_project/index.html">FogChat</a></li>
+            <li><a href="About.html">About</a></li>
+            <!--li><a href="billdb/add_rate.php"><i class="fa-duotone fa-solid fa-ranking-star"></i></a>-->
+            <li><a href="Login.html" class="logout"><i class="fas fa-sign-out-alt logout-icon"></i> Log out</a></li>
+            
+        </ul>
+        <div class="logo">
+            <img src="assest/logo.png" alt="Logo">
+        </div>
+    </div>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const navLinks = document.querySelectorAll('.navbar a'); 
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

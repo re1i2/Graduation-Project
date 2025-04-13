@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-about" id="about">
+        <ul class="navbar">
+            <li ><a href="home.html">Home</a></li>
+            <li><a href="Places.html">Places</a></li>
+            <li><a href="#FogChat">FogChat</a></li>
+            <li><a href="About.html" aria-selected="true">About</a></li>
+            <li><a href="Login.html" class="logout"><i class="fas fa-sign-out-alt logout-icon"></i> Log out</a></li>
+        </ul>
+        <div class="logo">
+            <img src="assest/logo.png" alt="Logo">
+        </div>
+        <div class="about-content">
+            <img src="assest/about.webp" alt="Profile Image" class="img-content">
+            <div class="separator"></div>
+            <div>
+                <h1>About Us</h1>
+                <p>Our platform connects volunteers with organizations, enabling them to engage with various projects. We focus on providing a comprehensive experience where volunteers can track their hours, receive evaluations, and request training. Our goal is to foster a culture of collaboration and community impact.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const navLinks = document.querySelectorAll('.navbar a');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.parentElement.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
